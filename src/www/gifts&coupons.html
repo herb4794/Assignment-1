@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Gifts & Coupons — HVAR.mall (Hong Kong)</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Website Icon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo/HVAR_mall.png" sizes="128x128" />
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- CSS file -->
+    <!-- Main of CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <!-- Navigation-Bar of CSS -->
+    <link rel="stylesheet" href="../assets/css/navigation-bar.css" />
+
+    <!-- Gifts & Coupons of CSS -->
+    <link rel="stylesheet" href="../assets/css/gifts&coupons.css" />
+
+    <!-- Footer of CSS -->
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+</head>
+
+<body>
+
+    <!-- Header of Navigation-Bar -->
+    <header>
+
+        <div class="nav-container">
+            <!-- Start of Navigation Menu Items -->
+            <nav>
+
+                <!-- Navigation Menu Items of Mobile -->
+                <ul class="mobile-nav">
+                    <li><a href="#" class="link-bag"></a></li>
+                    <li>
+                        <a href="./index.html">
+                            <img src="../assets/images/logo/HVAR_mall.png">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="menu-icon-container">
+                            <div class="menu-icon">
+                                <span class="line-top"></span>
+                                <span class="line-bottom"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Navigation Menu Items of Desktop -->
+                <ul class="desktop-nav">
+                    <li>
+                        <a href="./index.html" class="desktop-logo">
+                            <img src="../assets/images/logo/HVAR_mall.png">
+                        </a>
+                    </li>
+
+                    <!-- The Mobile Version Will Use The Following Items -->
+                    <li><a href="../www/best-sellers.html" class="">Best Sellers</a></li>
+                    <li><a href="../www/todays-deals.html" class="">Today's Deals</a></li>
+                    <li><a href="../www/new-releases.html" class="">New Releases</a></li>
+                    <li><a href="../www/gifts&coupons.html" class="">Gifts & Coupons</a></li>
+                    <li><a href="../www/support.html" class="">Support</a></li>
+                    <li><a class="link-search"></a></li>
+                    <li><a class="link-bag"></a></li>
+                    <li class="desktop-login"><a href="./register&login.html" class="link-user"></a></li>
+
+                    <!-- This Login Option Is Only Available In The Mobile Version -->
+                    <li class="mobile-login"><a href="./register&login.html" class=""><i
+                                class="link-user"></i>Account</a></li>
+
+                </ul>
+            </nav>
+            <!-- End of Navigation Menu Items -->
+
+            <!-- Start of Search Container -->
+            <!-- Desktop Search Container -->
+            <div class="search-container hide">
+                <div class="link-search"></div>
+                <div class="search-bar">
+                    <form div="search-container-form" action="">
+                        <input type="text" placeholder="Search" id="desktop-searchTxt">
+                    </form>
+                    <div class="link-close" onclick="document.getElementById('desktop-searchTxt').value = ''"></div>
+
+                    <div class="recent-search">
+                        <h2>Recent Search</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Search Container -->
+            <div class="mobile-search-container active">
+                <div class="link-search"></div>
+                <div class="search-bar">
+                    <form div="search-container-form" action="">
+                        <input type="text" placeholder="Search" id="mobile-searchTxt">
+                    </form>
+                    <span class="cancel-btn"
+                        onclick="document.getElementById('mobile-searchTxt').value = ''">Cancel</span>
+
+                    <div class="recent-search">
+                        <h2>Recent Search</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="search-container-overlay" onclick="document.getElementById('desktop-searchTxt').value = ''"></div>
+        <!-- End of Search Container -->
+
+        <!-- Start of Shopping-Bag Container -->
+        <!-- Desktop Shopping-Bag Container -->
+        <div class="shopping-bag-container hide">
+            <div class="shopping-bag-container-bagview">
+                <h2>Your Bag is empty</h2>
+                <ul>
+                    <li>
+                        <a href="#"><i class="bag-icon"></i>Bag</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="book-mark-icon"></i>Saved Items</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="packet-icon"></i>Orders</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <!-- Mobile Shopping-Bag Container -->
+        <div class="mobile-shopping-bag-container hide">
+            <div class="mobile-shopping-bag-container-bagview">
+                <h2>Your Bag is empty</h2>
+                <ul>
+                    <li>
+                        <a href="#"><i class="bag-icon"></i>Bag</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="book-mark-icon"></i>Saved Items</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="packet-icon"></i>Orders</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+        <div class="search-container-overlay" onclick="document.getElementById('desktop-searchTxt').value = ''"></div>
+        <!-- End of Search Container -->
+    </header>
+    <!-- Header of Navigation-Bar -->
+
+    <!-- Body of Gifts & Coupons -->
+
+    <div class="gifts-and-coupons">
+
+        <div class="gifts-and-coupons-container">
+
+            <div class="gifts-and-coupons-title">
+                <h2 class="gifts-and-coupons-header">Gift Cards & Coupons</h2>
+                <p class="gifts-and-coupons-header-hint">Buy gift cards or coupons for your loved ones.</p>
+            </div>
+
+            <form action="#" class="gifts-and-coupons-side-menu">
+
+                <h1 class="gifts-and-coupons-side-menu-header">Do you have a HVAR.mall Gift Card?</h1>
+                
+                <div class="gifts-and-coupons-side-menu-categories">
+                    <a href="#" class="">Register to your account</a><br />
+                    <a href="#" class="">Remaining balance / usage history</a><br />
+                    <a href="#" class="">Reload</a><br />
+                    <a href="#" class="">Get up to 2.5 points for CVS reloads</a><br />
+                </div> 
+
+                <h1 class="gifts-and-coupons-side-menu-header">Pick a type</h1>
+
+                <div class="gifts-and-coupons-side-menu-categories">
+                    <a href="#" class="">Reload</a><br />
+                    <a href="#" class="">Email</a><br />
+                    <a href="#" class="">Print</a><br />
+                    <a href="#" class="">Greeting Card</a><br />
+                    <a href="#" class="">Box</a><br />
+                    <a href="#" class="">Envelope</a><br />
+                    <a href="#" class="">Paper Certificate</a><br />
+                    <a href="#" class="">Multipack (10 pcs)</a><br />
+                    <a href="#" class="">Add your photo</a><br />
+                    <a href="#" class="">Animation</a><br />
+                    <a href="#" class="">Buy in-store</a><br />
+                </div> 
+
+                <h1 class="gifts-and-coupons-side-menu-header">Pick an occasion</h1>
+
+                <div class="gifts-and-coupons-side-menu-categories">
+                    <a href="#" class="">Birthday</a><br />
+                    <a href="#" class="">New baby</a><br />
+                    <a href="#" class="">Wedding</a><br />
+                    <a href="#" class="">Congratulations</a><br />
+                    <a href="#" class="">Celebration / Present</a><br />
+                    <a href="#" class="">Kindle</a><br />
+                    <a href="#" class="">New Year's</a><br />
+                    <a href="#" class="">Valentine's Day / White Day</a><br />
+                    <a href="#" class="">New job</a><br />
+                    <a href="#" class="">Mother's Day</a><br />
+                    <a href="#" class="">Father's Day</a><br />
+                    <a href="#" class="">Respect for the Aged Day</a><br />
+                    <a href="#" class="">Christmas</a><br />
+                    <a href="#" class="">End-of-year / Obon Festival</a><br />
+                </div> 
+
+                <h1 class="gifts-and-coupons-side-menu-header">FAQ</h1>
+
+                <div class="gifts-and-coupons-side-menu-categories">
+                    <a href="#" class="">HVAR.mall Gift Card Terms & Conditions</a><br />
+                    <a href="#" class="">Validity period</a><br />
+                    <a href="#" class="">Purchasing & shipping</a><br />
+                    <a href="#" class="">Usage</a><br />
+                    <a href="#" class="">Resending E-mail GCs</a><br />
+                    <a href="#" class="">Managing E-mail GC delivery dates</a><br />
+                    <a href="#" class="">Usage restrictions</a><br />
+                    <a href="#" class="">When gift cards cannot be used</a><br />
+                    <a href="#" class="">Using for a different order</a><br />
+                    <a href="#" class="">Amazon Gift Card help pages</a><br />
+                    <a href="#" class="">Notes about purchasing</a><br />
+                    <a href="#" class="">Notes about scams</a><br />
+                    <a href="#" class="">Notification – Payment Services Act</a><br />
+                    <a href="#" class="">Notification - Entity Conversion</a><br />
+                    <a href="#" class="">Notification - Renew name and logo</a><br />
+                </div> 
+
+                <h1 class="gifts-and-coupons-side-menu-header">Corporate HVAR.mall Gift Card</h1>
+
+                <div class="gifts-and-coupons-side-menu-categories">
+                    <a href="#" class="">Corporate HVAR.mall Gift Card</a><br />
+                    <a href="#" class="">FAQ</a><br />                    
+                </div> 
+
+                <h1 class="gifts-and-coupons-side-menu-header">Gift orders</h1>
+
+                <div class="gifts-and-coupons-side-menu-categories">
+                    <a href="#" class="">Purchasing gift orders</a><br />
+                    <a href="#" class="">How to send gift orders</a><br />
+                    <a href="#" class="">Gift wrapping</a><br />
+                    <a href="#" class="">Wishlist</a><br />
+                    <a href="#" class="">Gift store</a><br />
+                </div> 
+
+            </form>
+
+
+            <form action="#" class="gifts-and-coupons-products-form">
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Body of Gifts & Coupons -->
+
+    <!-- Footer of Menu -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">About HVAR</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Center</a></li>
+                        <li><a href="#">Community Impact</a></li>
+                        <li><a href="#">HVAR Global</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Cooperation Opportunities</h4>
+                    <ul>
+                        <li><a href="#">Set up shop at HVAR.mall</a></li>
+                        <li><a href="#">Fulfillment by HVAR</a></li>
+                        <li><a href="#">Seller Fulfilled Prime</a></li>
+                        <li><a href="#">HVAR Pay</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Advertise Your Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>HVAR Payment Products</h4>
+                    <ul>
+                        <li><a href="#">HVAR Point</a></li>
+                        <li><a href="#">HVAR Gift Cards</a></li>
+                        <li><a href="#">HVAR Mastercard</a></li>
+                        <li><a href="#">HVAR Card Marketplace</a></li>
+                        <li><a href="#">HVAR Point Program</a></li>
+                        <li><a href="#">HVAR Your Balance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">HVAR and COVID-19</a></li>
+                        <li><a href="#">Shipping Rates & Policies</a></li>
+                        <li><a href="#">HVAR Prime</a></li>
+                        <li><a href="#">Returns Are Easy</a></li>
+                        <li><a href="#">Manage Your Content and Devices</a></li>
+                        <li><a href="#">HVAR Assistant</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyrightText">
+            <p>Copyright © 2022 HVAR Inc. All rights reserved.</p>
+        </div>
+
+    </footer>
+    <!-- Footer of Menu -->
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Control the Effect of the Index Page -->
+    <!-- Main of JavaScript -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Navigation-Bar of JavaScript -->
+    <script src="../assets/js/navigation-bar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recover your HVAR.mall ID</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Website Icon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo/HVAR_mall.png" sizes="128x128" />
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- CSS file -->
+    <!-- Main of CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <!-- Navigation-Bar of CSS -->
+    <link rel="stylesheet" href="../assets/css/navigation-bar.css" />
+
+    <!-- Forgot-ID Body of CSS -->
+    <link rel="stylesheet" href="../assets/css/forgot-id.css" />
+
+    <!-- Footer of CSS -->
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+</head>
+
+<body>
+    <!-- Header of Navigation-Bar -->
+    <header>
+
+        <div class="nav-container">
+            <!-- Start of Navigation Menu Items -->
+            <nav>
+
+                <!-- Navigation Menu Items of Mobile -->
+                <ul class="mobile-nav">
+                    <li><a href="#" class="link-bag"></a></li>
+                    <li>
+                        <a href="./index.html">
+                            <img src="../assets/images/logo/HVAR_mall.png">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="menu-icon-container">
+                            <div class="menu-icon">
+                                <span class="line-top"></span>
+                                <span class="line-bottom"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Navigation Menu Items of Desktop -->
+                <ul class="desktop-nav">
+                    <li>
+                        <a href="./index.html" class="desktop-logo">
+                            <img src="../assets/images/logo/HVAR_mall.png">
+                        </a>
+                    </li>
+
+                    <!-- The Mobile Version Will Use The Following Items -->
+                    <li><a href="../www/best-sellers.html" class="">Best Sellers</a></li>
+                    <li><a href="../www/todays-deals.html" class="">Today's Deals</a></li>
+                    <li><a href="../www/new-releases.html" class="">New Releases</a></li>
+                    <li><a href="../www/gifts&coupons.html" class="">Gifts & Coupons</a></li>
+                    <li><a href="../www/support.html" class="">Support</a></li>
+                    <li><a class="link-search"></a></li>
+                    <li><a class="link-bag"></a></li>
+                    <li class="desktop-login"><a href="./register&login.html" class="link-user"></a></li>
+
+                    <!-- This Login Option Is Only Available In The Mobile Version -->
+                    <li class="mobile-login"><a href="./register&login.html" class=""><i
+                                class="link-user"></i>Account</a></li>
+
+                </ul>
+            </nav>
+            <!-- End of Navigation Menu Items -->
+
+            <!-- Start of Search Container -->
+            <!-- Desktop Search Container -->
+            <div class="search-container hide">
+                <div class="link-search"></div>
+                <div class="search-bar">
+                    <form div="search-container-form" action="">
+                        <input type="text" placeholder="Search" id="desktop-searchTxt">
+                    </form>
+                    <div class="link-close" onclick="document.getElementById('desktop-searchTxt').value = ''"></div>
+
+                    <div class="recent-search">
+                        <h2>Recent Search</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Search Container -->
+            <div class="mobile-search-container active">
+                <div class="link-search"></div>
+                <div class="search-bar">
+                    <form div="search-container-form" action="">
+                        <input type="text" placeholder="Search" id="mobile-searchTxt">
+                    </form>
+                    <span class="cancel-btn"
+                        onclick="document.getElementById('mobile-searchTxt').value = ''">Cancel</span>
+
+                    <div class="recent-search">
+                        <h2>Recent Search</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="search-container-overlay" onclick="document.getElementById('desktop-searchTxt').value = ''"></div>
+        <!-- End of Search Container -->
+
+        <!-- Start of Shopping-Bag Container -->
+        <!-- Desktop Shopping-Bag Container -->
+        <div class="shopping-bag-container hide">
+            <div class="shopping-bag-container-bagview">
+                <h2>Your Bag is empty</h2>
+                <ul>
+                    <li>
+                        <a href="#"><i class="bag-icon"></i>Bag</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="book-mark-icon"></i>Saved Items</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="packet-icon"></i>Orders</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <!-- Mobile Shopping-Bag Container -->
+        <div class="mobile-shopping-bag-container hide">
+            <div class="mobile-shopping-bag-container-bagview">
+                <h2>Your Bag is empty</h2>
+                <ul>
+                    <li>
+                        <a href="#"><i class="bag-icon"></i>Bag</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="book-mark-icon"></i>Saved Items</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="packet-icon"></i>Orders</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        </div>
+
+        <div class="search-container-overlay" onclick="document.getElementById('desktop-searchTxt').value = ''"></div>
+        <!-- End of Search Container -->
+    </header>
+    <!-- Header of Navigation-Bar -->
+
+    <!-- Body of Forgot-ID -->
+    <div class="forgot-id">
+        <div class="forgot-id-container">
+
+            <h2>HVAR.mall ID</h2>
+
+            <form action="#" class="forgot-id-container-form">
+
+                <h1>Please enter your information below to find your <br /> HVAR.mall ID</h1>
+
+                <div class="input-field lastname">
+                    <input id="forgot-id-lastname" type="text" class="input-forgot-id-lastname" value="" />
+                    <label for="forgot-id-lastname" class="label-forgot-id-lastname">Last Name</label>
+                </div>
+
+                <div class="input-field firstname">
+                    <input id="forgot-id-firstname" type="text" class="input-forgot-id-firstname" value="" />
+                    <label for="forgot-id-firstname" class="label-forgot-id-firstname">First Name</label>
+                </div>
+
+                <div class="input-field email">
+                    <input id="forgot-id-email" type="email" class="input-forgot-id-email" value="" />
+                    <label for="forgot-id-email" class="label-forgot-id-email">Email Address</label>
+                </div>
+
+                <input id="forgot-id-continue-btn" type="button" value="Continue" class="forgot-id-continue-btn active">
+
+            </form>
+
+        </div>
+    </div>
+    <!-- Body of Forgot-ID -->
+
+    <!-- Footer of Menu -->
+    <footer class="footer">
+
+        <!-- Copyright -->
+        <div class="copyrightText">
+            <p>Copyright © 2022 HVAR Inc. All rights reserved.</p>
+        </div>
+
+    </footer>
+    <!-- Footer of Menu -->
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Control the Effect of the Forgot Page -->
+    <!-- Main of JavaScript -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Navigation-Bar of JavaScript -->
+    <script src="../assets/js/navigation-bar.js"></script>
+
+    <!-- Forgot-ID of JavaScript -->
+    <script src="../assets/js/forgot-id.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.header-slider {
+    top: 44px;
+    position: relative;
+}
+
+.header-slider .wrapper { 
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-slider .wrapper .prev-btn {
+    left: 0;
+}
+
+.header-slider .wrapper .next-btn  {
+    right: 0;
+}
+
+.header-slider .wrapper .prev-btn, 
+.header-slider .wrapper .next-btn  {
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.2s;    
+}
+
+.header-slider .wrapper .prev-btn:hover, 
+.header-slider .wrapper .next-btn:hover {
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.header-slider .wrapper .prev-btn .prev-btn-img {
+    background: url('../images/slider/tools/chevron-left_white.svg');
+}
+
+.header-slider .wrapper .next-btn .next-btn-img {
+    background: url('../images/slider/tools/chevron-right_white.svg');  
+}
+
+.header-slider .wrapper .prev-btn .prev-btn-img, 
+.header-slider .wrapper .next-btn .next-btn-img {
+    display: block;
+    margin-left: 2px;
+    background-position: center;
+    background-size: 23px;
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    opacity: 0.75;   
+}
+
+.header-slider .wrapper .slides-container {
+    height: 96vh;
+    transition: 0.5s cubic-bezier(0.48, 0.15, 0.18, 1);
+    position: relative;
+}
+
+.header-slider .wrapper .slides-container .slide-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.header-slider .wrapper .slides-container .slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1024px) {
+    .header-slider {
+        top: 48px;
+    }
+}
+
+/* Navigation Dots */
+.header-slider .navigation-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.header-slider .navigation-dots .single-dot {
+    background: rgb(75, 75, 75);
+    height: 5px;
+    width: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 0 10px;
+    margin-top: -100px;
+    z-index: 50;
+    opacity: 0.5;
+}
+
+.header-slider .navigation-dots .single-dot:hover {
+    opacity: 1;
+}
+
+.header-slider .navigation-dots .single-dot.active {
+    background: #ff8800;
+    opacity: 1;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

@@ -1,0 +1,243 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* CSS Responsive Web Design (RWD) - Lesson 5 */
+.col-1 {width: 14.28%;}
+.col-2 {width: 28.57%;}
+.col-3 {width: 42.85%;}
+.col-4 {width: 57.14%;}
+.col-5 {width: 71.42%;}
+.col-6 {width: 85.71%;}
+.col-7 {width: 100%;}
+
+/* Float all columns to the left */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* Cancel div floating in each row */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Step 1. basic RWD code */
+
+/* Step 2. For screen less than 542px */
+@media only screen and (max-width: 542px) {
+    [class*="col-"] {
+        margin: 0 auto;
+        float: none;
+        width: 40%;
+        padding: 15px;
+    }
+}
+/* Step 2. For screen less than 542px */
+/* CSS Responsive Web Design (RWD) - Lesson 5 */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.todays-deals {
+    top: 44px;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    padding-bottom: 10vh;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.todays-deals .todays-deals-container {
+    width: 100%;
+}
+
+.todays-deals .todays-deals-container .todays-deals-title {
+    padding: 15px 5vw;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.todays-deals .todays-deals-container .todays-deals-title .todays-deals-header {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+.todays-deals .todays-deals-container .todays-deals-title .todays-deals-header-hint {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+.todays-deals .todays-deals-container .todays-deals-title .todays-deals-header-hint a {
+    text-decoration: none;
+    color: #ff8800;
+}
+
+.todays-deals .todays-deals-container .todays-deals-side-menu {
+    width: 260px;
+    margin: 5vh 0;
+    padding-left: 30px;
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+
+.todays-deals .todays-deals-container .todays-deals-side-menu .todays-deals-side-menu-header {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.todays-deals .todays-deals-container .todays-deals-side-menu .todays-deals-side-menu-categories {
+    padding: 2vh 0;
+    padding-left: 20px;
+}
+
+.todays-deals .todays-deals-container .todays-deals-side-menu .todays-deals-side-menu-categories a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration:none;
+    color: rgb(75, 75, 75);
+}
+
+.todays-deals .todays-deals-container .todays-deals-side-menu .todays-deals-side-menu-categories a:hover {
+    color: #ff8800;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form {
+    top: 120px;
+    left: 280px;
+    position: absolute;
+    height: 100%;
+    min-height: 100%;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 3%;
+    background: rgb(235, 235, 235, 0.2);
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-image {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-image img {
+    border-radius: 3%;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-image .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-image .discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-image .card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card:hover .card-btn {
+    opacity: 1;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-image .card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-info .product-brand {
+    font-weight: 500;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-info .product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-info .price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.todays-deals .todays-deals-container .todays-deals-products-form .product-card .product-info .actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+    color: rgba(255, 4, 4, 0.95);
+}
+
+@media (max-width: 1024px) {
+    .todays-deals {
+        top: 48px;
+    }
+}
+
+@media (max-width: 1579px)  {
+    .todays-deals {
+        height: 1500px;
+    }
+}
+
+@media (max-width: 1319px)  {
+    .todays-deals {
+        height: 1950px;
+    }
+}
+
+@media (max-width: 1059px)  {
+    .todays-deals {
+        height: 2400px;
+    }
+}
+
+@media (max-width: 799px)  {
+    .todays-deals {
+        height: 4650px;
+    }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  

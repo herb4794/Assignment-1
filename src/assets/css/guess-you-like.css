@@ -1,0 +1,155 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* CSS Responsive Web Design (RWD) - Lesson 5 */
+.col-1 {width: 14.28%;}
+.col-2 {width: 28.57%;}
+.col-3 {width: 42.85%;}
+.col-4 {width: 57.14%;}
+.col-5 {width: 71.42%;}
+.col-6 {width: 85.71%;}
+.col-7 {width: 100%;}
+
+/* Float all columns to the left */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* Cancel div floating in each row */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Step 1. basic RWD code */
+
+/* Step 2. For screen less than 542px */
+@media only screen and (max-width: 542px) {
+    [class*="col-"] {
+        margin: 0 auto;
+        float: none;
+        width: 40%;
+        padding: 15px;
+    }
+}
+/* Step 2. For screen less than 542px */
+/* CSS Responsive Web Design (RWD) - Lesson 5 */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.guess-you-like {
+    border-radius: 3% 3% 0 0;
+    background: rgb(250, 250, 250);
+    border-top: 1.5px solid rgb(230, 230, 230, 0.5);
+    padding-bottom: 20px;
+}
+
+.guess-you-like .guess-you-like-container {
+    width: 100%;
+    padding: 10px 2vw;
+}
+
+.guess-you-like .guess-you-like-container .guess-you-like-header {
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+
+.guess-you-like .guess-you-like-container .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 3%;
+    background: rgb(235, 235, 235, 0.2);
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-image {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+
+.guess-you-like .guess-you-like-container .product-card .product-image img {
+    border-radius: 3%;
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-image .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-image .discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-image .card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.guess-you-like .guess-you-like-container .product-card:hover .card-btn {
+    opacity: 1;
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-image .card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-info .product-brand {
+    font-weight: 500;
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-info .product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-info .price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.guess-you-like .guess-you-like-container .product-card .product-info .actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+    color: rgba(255, 4, 4, 0.95);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

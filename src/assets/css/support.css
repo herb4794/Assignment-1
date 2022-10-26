@@ -1,0 +1,165 @@
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.support {
+    top: 40px;
+    position: relative;
+}
+
+.support .support-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.support .support-container .support-container-banner {
+    min-height: 48vh;
+}
+
+.support .support-container .support-container-banner img {
+    height: 100%;
+    width: 100%;
+}
+
+.support .support-container .support-container-banner .support-container-banner-header {
+    position: absolute;
+    margin-top: -16%;
+    margin-left: 10%;
+    color: rgb(252, 252, 252);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* Common Problem Part */
+.support .support-container .support-container-common-problem {
+    position: relative;
+    background: rgb(252, 252, 252);
+    width: 100%;
+    min-height: 200px;
+    margin-top: -20vh;
+    padding: 0 5vw;
+    border-top: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
+    display: flex;
+}
+
+.support .support-container .support-container-common-problem .support-container-forgot .link-text {
+    background: url('../images/support/tools/card-text_black.svg');
+}
+
+.support .support-container .support-container-common-problem .support-container-goods-problem {
+    border-left: 1px solid rgb(220, 220, 220) ;
+    border-right: 1px solid rgb(220, 220, 220) ;
+}
+
+.support .support-container .support-container-common-problem .support-container-goods-problem .link-question {
+    background: url('../images/support/tools/question-circle_black.svg');
+}
+
+
+.support .support-container .support-container-common-problem .support-container-bill-and-subscriptions .link-receipt {
+    background: url('../images/support/tools/receipt_black.svg');
+}
+
+
+.support .support-container .support-container-common-problem .support-container-forgot, 
+.support .support-container .support-container-common-problem .support-container-goods-problem, 
+.support .support-container .support-container-common-problem .support-container-bill-and-subscriptions {
+    width: 33.33%;
+    height: 20vh;
+    margin: 5vh auto;
+    text-decoration:none;
+}
+
+.support .support-container .support-container-common-problem .support-container-forgot .link-text, 
+.support .support-container .support-container-common-problem .support-container-goods-problem .link-question, 
+.support .support-container .support-container-common-problem .support-container-bill-and-subscriptions .link-receipt {
+    vertical-align: middle;
+    display: inline-block;
+    background-position: center;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    padding: 5vh 15vw;
+    background-repeat: no-repeat;
+    opacity: 0.65;
+}
+
+.support .support-container .support-container-common-problem .support-container-forgot p, 
+.support .support-container .support-container-common-problem .support-container-goods-problem p, 
+.support .support-container .support-container-common-problem .support-container-bill-and-subscriptions p {
+    color: rgb(75, 75, 75);
+    text-align: center;
+}
+/* Common Problem Part */
+
+
+/* Search Bar Part */
+.support .support-container .support-container-search-bar {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3vh 5vw;
+}
+
+.support .support-container .support-container-search-bar h2 {
+    text-align: center;
+    padding: 1vh 0;
+}
+
+.support .support-container .support-container-search-bar .search-bar .link-search {
+    background: url('../images/nav-items/search-icon_black.svg');
+    display: block;
+    background-position: center;
+    background-size: 25px;
+    height: 55px;
+    width: 55px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.support .support-container .support-container-search-bar .search-bar .input-field {
+    max-width: 70vw;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    margin: 10px 0;
+    height: 55px;
+    display: grid;
+    border-radius: 15px;
+    grid-template-columns: 15% 85%;
+    padding: 0 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.support .support-container .support-container-search-bar .search-bar .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+    margin-left: -30px;
+}
+
+
+/* Search Bar Part */
+
+@media (max-width:1024px) {
+    .support {
+        top: 48px;
+    }
+}
+
+@media (max-width:650px) {
+    .support .support-container .support-container-banner .support-container-banner-header {
+        margin-top: 10px;
+        margin-left: 0;
+        position: relative;
+        color: rgb(75, 75, 75);
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
